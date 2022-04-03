@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Patient Registration Form</title>
+</head>
+<body>
+  <div>
+  <input type="text" placeholder="Patient Name" id="name">
+  </div>
+  <div>
+  <input type="text" placeholder="Patient LastName" id="lastname">
+  </div>
+  <div>
+  <input type="text" placeholder="Patient Birthdate" id="birthdate">
+  </div>
+  <div>
+  <input type="text" placeholder="Patient BloodType" id="bloodtype">
+  </div>
+  <div>
+  <button type="button" onclick="getInputValue();"> Register Patient </button>
+  </div>
+  <script>
+    function getInputValue(){
+      // Selecting the input element and get its value 
+      var inputTags = ["name", "lastname", "birthdate", "bloodtype"];
+      var inputVal = ""
+      inputTags.forEach(elementId => {
+        inputVal += elementId + ": ";
+        var value = document.getElementById(elementId).value;
+        console.log(value);
+        if(value === "") {
+          value = "null";
+        }
+        inputVal += value + "\n";
+      });
+      // Displaying the value
+      alert(inputVal);
+    }
+    </script>
+</body>
+</html>
