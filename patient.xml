@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patient>
+    <publicKey></publicKey>
+    <privateKey></privateKey>
+    <patientInfo>
+        <name>Juan</name>
+        <surname>Carlos</surname>
+        <birthDate>1969-7-15</birthDate>
+        <bloodType>o-</bloodType>
+        <allergies>
+            <allergy/>
+        </allergies>
+    </patientInfo>
+    <emContacts>
+        <emContact>
+            <name>Andres</name>
+            <surname>Rodriguez</surname>
+            <cellpone>+54911xxxxyyyy</cellpone>
+        </emContact>
+    </emContacts>
+</patient>
